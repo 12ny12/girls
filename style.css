@@ -185,6 +185,57 @@ html {
     margin: 0 0 15px 0;
 }
 
+/* ===== 無料体験会のお知らせ ===== */
+.campaign-notice {
+    background: var(--white-color);
+    border: 3px dashed var(--accent-color);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 119, 182, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+.campaign-icon {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 85px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.campaign-title {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin: 40px 0 20px 0;
+    font-weight: 700;
+}
+.campaign-text {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+.campaign-text strong {
+    color: var(--primary-color);
+    background: linear-gradient(transparent 60%, #ffca3a80 60%);
+}
+.campaign-btn {
+    margin-top: 20px;
+}
+.campaign-btn i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+
 /* ===== 画像付き紹介セクション ===== */
 .feature-container {
     display: flex;
