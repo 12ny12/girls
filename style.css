@@ -18,6 +18,10 @@ body {
     line-height: 1.8;
 }
 
+main {
+    padding-top: 80px; /* 固定ヘッダー分の余白を確保 */
+}
+
 /* スムーズなスクロールを実現 */
 html {
     scroll-behavior: smooth;
@@ -89,10 +93,11 @@ html {
     width: 100%;
     z-index: 100;
     transition: background-color 0.3s ease;
-}
-.header.scrolled {
     background-color: var(--white-color);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.header.scrolled {
+    /* スタイルは .header に統合済み */
 }
 .header .container {
     display: flex;
@@ -133,7 +138,7 @@ html {
 
 /* ===== ファーストビュー ===== */
 .hero {
-    height: 100vh;
+    height: calc(100vh - 80px); /* ヘッダーの高さを引いた分を高さに設定 */
     /* 画像の上に半透明のネイビーを重ねて文字を読みやすくします */
     background: linear-gradient(rgba(0, 119, 182, 0.7), rgba(0, 119, 182, 0.7)), url('smiling-nine-year-old-female-260nw-2474664593.png') no-repeat center center/cover;
     color: var(--white-color);
